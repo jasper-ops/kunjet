@@ -1,5 +1,5 @@
-import {test,expect} from 'vitest';
-import { isEmail } from '../validator';
+import { test, expect } from 'vitest';
+import { isEmail } from '../src/validator';
 
 const trulyEmails = [
     '2080969361@gmmail.com',
