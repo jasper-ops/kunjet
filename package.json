@@ -1,17 +1,55 @@
 {
-  "name": "@jasper/utils",
+  "name": "jasper-utils",
   "main": "src/index.js",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "type": "module",
   "author": "Jasper <wx2080969361@gmail.com>",
+  "description": "Some commonly used javascript utility functions",
+  "keywords": [
+    "utils",
+    "format",
+    "money",
+    "phone"
+  ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasper-ops/utils"
+  },
+  "homepage": "https://github.com/jasper-ops/utils",
+  "exports": {
+    "formatter": {
+      "import": {
+        "types": "./dist/formatter.d.ts",
+        "default": "./dist/formatter.js"
+      },
+      "require": {
+        "types": "./dist/formatter.d.ts",
+        "default": "./dist/formatter.cjs"
+      }
+    },
+    "validator": {
+      "import": {
+        "types": "./dist/validator.d.ts",
+        "default": "./dist/validator.js"
+      },
+      "require": {
+        "types": "./dist/validator.d.ts",
+        "default": "./dist/validator.cjs"
+      }
+    }
+  },
+  "files": [
+    "*.d.ts",
+    "dist"
+  ],
   "scripts": {
     "test": "vitest",
     "test:run": "vitest run",
     "dev": "tsup src/*.ts --watch src --clean",
     "build": "tsup src/*.ts --format cjs,esm --dts --clean",
     "commit": "git-cz",
-    "release": "bumpp && pnpm publish",
+    "release": "bumpp && npm publish",
     "prepare": "husky"
   },
   "devDependencies": {
