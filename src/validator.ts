@@ -22,3 +22,8 @@ export function isUrl(url: string) {
     const re = /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/;
     return re.test(url);
 }
+
+export function isChineseChar(str: string) {
+    const re = /^[\u4e00-\u9fa5]+$/;
+    return re.test(str);
+}
