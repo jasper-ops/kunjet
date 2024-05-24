@@ -1,6 +1,6 @@
 {
   "name": "kunjet",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "author": "Jasper <wx2080969361@gmail.com>",
   "description": "Some commonly used javascript utility functions",
