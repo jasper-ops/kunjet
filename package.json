@@ -1,6 +1,5 @@
 {
   "name": "kunjet",
-  "main": "src/index.js",
   "version": "0.0.4",
   "type": "module",
   "author": "Jasper <wx2080969361@gmail.com>",
@@ -17,8 +16,60 @@
     "url": "https://github.com/jasper-ops/utils"
   },
   "homepage": "https://github.com/jasper-ops/utils",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
   "exports": {
-    "./*": "./dist/*"
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./formatter": {
+      "import": {
+        "types": "./dist/formatter.d.ts",
+        "default": "./dist/formatter.js"
+      },
+      "require": {
+        "types": "./dist/formatter.d.ts",
+        "default": "./dist/formatter.cjs"
+      }
+    },
+    "./money": {
+      "import": {
+        "types": "./dist/money.d.ts",
+        "default": "./dist/money.js"
+      },
+      "require": {
+        "types": "./dist/money.d.ts",
+        "default": "./dist/money.cjs"
+      }
+    },
+    "./validator": {
+      "import": {
+        "types": "./dist/validator.d.ts",
+        "default": "./dist/validator.js"
+      },
+      "require": {
+        "types": "./dist/validator.d.ts",
+        "default": "./dist/validator.cjs"
+      }
+    },
+    "./type-validator": {
+      "import": {
+        "types": "./dist/type-validator.d.ts",
+        "default": "./dist/type-validator.js"
+      },
+      "require": {
+        "types": "./dist/type-validator.d.ts",
+        "default": "./dist/type-validator.cjs"
+      }
+    },
+    "./*": "./*"
   },
   "typesVersions": {
     "*": {

@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "./dist",
     "target": "es2017",
     "jsx": "preserve",
     "lib": ["esnext"],
@@ -9,5 +10,6 @@
     "strict": true,
     "strictNullChecks": true,
     "esModuleInterop": true
-  }
+  },
+  "include": ["src/**/*"]
 }
