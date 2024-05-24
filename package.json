@@ -1,5 +1,5 @@
 {
-  "name": "jasper-utils",
+  "name": "kunjet",
   "main": "src/index.js",
   "version": "0.0.1",
   "type": "module",
@@ -18,26 +18,7 @@
   },
   "homepage": "https://github.com/jasper-ops/utils",
   "exports": {
-    "formatter": {
-      "import": {
-        "types": "./dist/formatter.d.ts",
-        "default": "./dist/formatter.js"
-      },
-      "require": {
-        "types": "./dist/formatter.d.ts",
-        "default": "./dist/formatter.cjs"
-      }
-    },
-    "validator": {
-      "import": {
-        "types": "./dist/validator.d.ts",
-        "default": "./dist/validator.js"
-      },
-      "require": {
-        "types": "./dist/validator.d.ts",
-        "default": "./dist/validator.cjs"
-      }
-    }
+    ".": "./dist/"
   },
   "files": [
     "*.d.ts",
