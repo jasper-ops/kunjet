@@ -18,7 +18,15 @@
   },
   "homepage": "https://github.com/jasper-ops/utils",
   "exports": {
-    ".": "./dist/"
+    "./*": "./dist/*"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./*"
+      ]
+    }
   },
   "files": [
     "*.d.ts",
